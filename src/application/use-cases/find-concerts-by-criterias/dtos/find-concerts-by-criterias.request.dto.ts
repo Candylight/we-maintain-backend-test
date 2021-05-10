@@ -9,26 +9,40 @@ import { FindConcertsByCriteriasRequestInterface } from '../../../../domain/mode
  */
 export class FindConcertsByCriteriasRequest
   implements FindConcertsByCriteriasRequestInterface {
-  @ApiPropertyOptional({description: "Latitude of your coordinates.", example: "38.9171386"})
+  @ApiPropertyOptional({
+    description: 'Latitude of your coordinates.',
+    example: '38.9171386',
+  })
   @IsNumber()
   @Max(90)
   @Min(-90)
   @IsOptional()
   latitude?: number;
 
-  @ApiPropertyOptional({description: "Longitude of your coordinates.", example: "-77.0276204"})
+  @ApiPropertyOptional({
+    description: 'Longitude of your coordinates.',
+    example: '-77.0276204',
+  })
   @IsNumber()
   @Max(180)
   @Min(-180)
   @IsOptional()
   longitude?: number;
 
-  @ApiPropertyOptional({description: "Radius to search within (km).", example: "20"})
+  @ApiPropertyOptional({
+    description: 'Radius to search within (km).',
+    example: '20',
+  })
   @IsInt()
   @IsOptional()
   radius?: number;
 
-  @ApiPropertyOptional({ type: 'number', isArray: true, description: "A list of BandIds.", example: "35,24" })
+  @ApiPropertyOptional({
+    type: 'number',
+    isArray: true,
+    description: 'A list of BandIds.',
+    example: '35,24',
+  })
   @IsNumber({}, { each: true })
   @IsOptional()
   bandIds?: number;

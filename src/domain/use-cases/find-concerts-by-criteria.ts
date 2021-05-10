@@ -5,7 +5,6 @@ import { BandRepository } from '../ports/repositories/band.repository';
 import { VenueRepository } from '../ports/repositories/venue.repository';
 import { ConcertRepository } from '../ports/repositories/concert.repository';
 
-
 export class FindConcertsByCriteria {
   constructor(
     protected bandRepository: BandRepository,
