@@ -8,7 +8,7 @@ export class VenueMapper {
    * @param venueEntity VenueEntity
    * @return Venue
    */
-  public static toVenue(venueEntity: VenueEntityInterface): Venue {
+  private static toVenue(venueEntity: VenueEntityInterface): Venue {
     return new Venue(
       venueEntity.id,
       venueEntity.name,

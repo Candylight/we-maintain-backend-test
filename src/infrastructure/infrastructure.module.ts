@@ -14,6 +14,7 @@ import { FindConcertsByCriteria } from '../domain/use-cases/find-concerts-by-cri
 
 @Module({
   imports: [
+    MongooseModule.forRoot('mongodb://localhost:27017/weMaintain'),
     MongooseModule.forFeature([
       { name: Band.name, schema: BandSchema },
       { name: Venue.name, schema: VenueSchema },

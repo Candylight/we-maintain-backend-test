@@ -8,7 +8,7 @@ export class BandMapper {
    * @param bandEntity BandEntity
    * @return Band
    */
-  public static toBand(bandEntity: BandEntityInterface): Band {
+  private static toBand(bandEntity: BandEntityInterface): Band {
     return new Band(bandEntity.id, bandEntity.name);
   }
 

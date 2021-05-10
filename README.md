@@ -24,6 +24,17 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Testing the app
+
+```bash
+# test coverage
+$ npm run test:cov
+
+# tests e2E
+$ npm run test:e2e
+
+```
 ## Stack
 
 ### Docker

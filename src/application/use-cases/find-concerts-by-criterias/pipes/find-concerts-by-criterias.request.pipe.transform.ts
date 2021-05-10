@@ -71,7 +71,7 @@ export class FindConcertsByCriteriasRequestPipeTransform
    * @param parameters
    * @private
    */
-  private transformParameters(parameters) {
+  transformParameters(parameters) {
     return {
       bandIds: this.formatBandIds(parameters.bandIds),
       latitude: FindConcertsByCriteriasRequestPipeTransform.transformStringToFloat(

@@ -12,7 +12,7 @@ export class FindConcertsByCriteriasResponseMapper {
    * @param venue Venue
    * @return ConcertGateway
    */
-  public static toConcertGateway(
+  private static toConcertGateway(
     concert: Concert,
     band: Band,
     venue: Venue,

@@ -8,7 +8,7 @@ export class ConcertMapper {
    * @param concertEntity ConcertEntity
    * @return Concert
    */
-  public static toConcert(concertEntity: ConcertEntityInterface): Concert {
+  private static toConcert(concertEntity: ConcertEntityInterface): Concert {
     return new Concert(
       concertEntity.id,
       concertEntity.bandId,
