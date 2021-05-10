@@ -18,20 +18,4 @@ export class Concert {
     this.venueId = venueId;
     this.date = date;
   }
-
-  getId(): number {
-    return this.id;
-  }
-
-  getBandId(): number {
-    return this.bandId;
-  }
-
-  getVenueId(): number {
-    return this.venueId;
-  }
-
-  getDate(): number {
-    return this.date;
-  }
 }

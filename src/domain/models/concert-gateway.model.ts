@@ -28,24 +28,4 @@ export class ConcertGateway {
     this.latitude = latitude;
     this.longitude = longitude;
   }
-
-  getBand(): string {
-    return this.band;
-  }
-
-  getLocation(): string {
-    return this.location;
-  }
-
-  getDate(): number {
-    return this.date;
-  }
-
-  getLatitude(): number {
-    return this.latitude;
-  }
-
-  getLongitude(): number {
-    return this.longitude;
-  }
 }

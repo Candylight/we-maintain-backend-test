@@ -4,15 +4,13 @@ import { FindConcertsByCriteriasResponseMapper } from '../services/response-mapp
 import { BandRepository } from '../ports/repositories/band.repository';
 import { VenueRepository } from '../ports/repositories/venue.repository';
 import { ConcertRepository } from '../ports/repositories/concert.repository';
-import { Inject, Injectable } from '@nestjs/common';
 
-@Injectable()
+
 export class FindConcertsByCriteria {
-  // Maybe Inject with a classic method.
   constructor(
-    @Inject('BandRepository') private bandRepository: BandRepository,
-    @Inject('VenueRepository') private venueRepository: VenueRepository,
-    @Inject('ConcertRepository') private concertRepository: ConcertRepository,
+    protected bandRepository: BandRepository,
+    protected venueRepository: VenueRepository,
+    protected concertRepository: ConcertRepository,
   ) {}
 
   /**

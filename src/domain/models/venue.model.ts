@@ -18,20 +18,4 @@ export class Venue {
     this.latitude = latitude;
     this.longitude = longitude;
   }
-
-  getId(): number {
-    return this.id;
-  }
-
-  getName(): string {
-    return this.name;
-  }
-
-  getLatitude(): number {
-    return this.latitude;
-  }
-
-  getLongitude(): number {
-    return this.longitude;
-  }
 }

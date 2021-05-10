@@ -1,11 +1,21 @@
-import { Controller, Get, HttpStatus, Query, Res } from '@nestjs/common';
-import { FindConcertsByCriteriasRequestPipeTransform } from '../pipes/find-concerts-by-criterias.request.pipe.transform';
-import { FindConcertsByCriteriasRequest } from '../dtos/find-concerts-by-criterias.request.dto';
+import {
+  Controller,
+  Get,
+  HttpStatus,
+  Inject,
+  Query,
+  Res,
+} from '@nestjs/common';
 import { FindConcertsByCriteria } from '../../../../domain/use-cases/find-concerts-by-criteria';
+import { FindConcertsByCriteriasRequest } from '../dtos/find-concerts-by-criterias.request.dto';
+import { FindConcertsByCriteriasRequestPipeTransform } from '../pipes/find-concerts-by-criterias.request.pipe.transform';
 
 @Controller('concerts')
 export default class FindConcertsByCriteriasController {
-  constructor(private findConcertsByCriteria: FindConcertsByCriteria) {}
+  constructor(
+    @Inject('FindConcertsByCriteria')
+    private findConcertsByCriteria: FindConcertsByCriteria,
+  ) {}
 
   /**
    * Endpoint REST for handling our use case.

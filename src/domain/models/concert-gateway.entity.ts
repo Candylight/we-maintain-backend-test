@@ -1,3 +1,8 @@
+/**
+ * Act as an abstraction for ConcertGateway Model.
+ *
+ * @interface ConcertGatewayEntityInterface
+ */
 export interface ConcertGatewayEntityInterface {
   readonly band: string;
   readonly location: string;

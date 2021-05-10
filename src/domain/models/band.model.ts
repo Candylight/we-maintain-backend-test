@@ -12,12 +12,4 @@ export class Band {
     this.id = id;
     this.name = name;
   }
-
-  public getName(): string {
-    return this.name;
-  }
-
-  public getId(): number {
-    return this.id;
-  }
 }

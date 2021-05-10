@@ -111,6 +111,7 @@ Contains all the infrastructure related scope which includes:
       * **entities**: MongoDB entities to build document related to domain entities.
       * **repositories**: Fetch entities in MongoDB.
       * **schemas**: Mongo schemas.
+      * **use-cases**: Needed to adapt our use-cases to our infrastructure.
     
 ## Improvements for scalability and limitations (Step 2 of the weMaintain test)
 
