@@ -10,7 +10,7 @@ import { BandRepositoryMongo } from './adapters/mongo/repositories/band.reposito
 import { VenueRepositoryMongo } from './adapters/mongo/repositories/venue.repository.mongo';
 import { ConcertRepositoryMongo } from './adapters/mongo/repositories/concert.repository.mongo';
 import { FindConcertsByCriteriasMongoUseCase } from './adapters/mongo/use-cases/find-concerts-by-criterias.use-case';
-import FindConcertsByCriteriasController from '../application/use-cases/find-concerts-by-criterias/controllers/find-concerts-by-criterias.controller';
+import { FindConcertsByCriteria } from '../domain/use-cases/find-concerts-by-criteria';
 
 @Module({
   imports: [
@@ -20,7 +20,6 @@ import FindConcertsByCriteriasController from '../application/use-cases/find-con
       { name: Concert.name, schema: ConcertSchema },
     ]),
   ],
-  controllers: [FindConcertsByCriteriasController],
   providers: [
     FindConcertsByCriteriasMongoUseCase,
     {
@@ -40,5 +39,6 @@ import FindConcertsByCriteriasController from '../application/use-cases/find-con
       useClass: FindConcertsByCriteriasMongoUseCase,
     },
   ],
+  exports: [FindConcertsByCriteria],
 })
 export default class InfrastructureModule {}

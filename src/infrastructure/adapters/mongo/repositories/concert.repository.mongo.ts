@@ -1,11 +1,9 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Concert } from '../../../../domain/models/concert.model';
 import { ConcertEntity } from '../entities/concert.entity';
 import { Model } from 'mongoose';
 import { ConcertRepository } from '../../../../domain/ports/repositories/concert.repository';
-import { BandRepository } from '../../../../domain/ports/repositories/band.repository';
-import { VenueRepository } from '../../../../domain/ports/repositories/venue.repository';
 import { ConcertMapper } from '../../../../domain/services/response-mappers/concert.mapper';
 
 /**
@@ -18,8 +16,6 @@ import { ConcertMapper } from '../../../../domain/services/response-mappers/conc
 export class ConcertRepositoryMongo implements ConcertRepository {
   constructor(
     @InjectModel('Concert') private readonly concertModel: Model<ConcertEntity>,
-    @Inject('BandRepository') private bandRepository: BandRepository,
-    @Inject('VenueRepository') private venueRepository: VenueRepository,
   ) {}
 
   /**
