@@ -1,20 +1,20 @@
 import { Concert } from '../../models/concert.model';
 
 /**
- * Interface being implemented on others repositories to request domain object
+ * Interface being implemented on others repositories to request domain object.
  *
  * @interface ConcertRepository
  */
 export interface ConcertRepository {
   /**
-   * Fetch all concerts
+   * Fetch all concerts.
    *
    * @return Concert[]
    */
   findAll(): Promise<Concert[]>;
 
   /**
-   * Fecth concerts by venues Ids
+   * Fecth concerts by venues Ids.
    *
    * @param venueIds number | number[]
    * @return Concert[]
@@ -22,7 +22,7 @@ export interface ConcertRepository {
   findByVenueIds(venueIds: number | number[]): Promise<Concert[]>;
 
   /**
-   * Fetch concerts by bands ids
+   * Fetch concerts by bands ids.
    *
    * @param bandIds number | number[]
    * @return Concert[]

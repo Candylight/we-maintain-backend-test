@@ -1,7 +1,7 @@
 import { Band } from '../../models/band.model';
 
 /**
- * Interface being implemented on others repositories to request domain object
+ * Interface being implemented on others repositories to request domain object.
  *
  * @interface BandRepository
  */

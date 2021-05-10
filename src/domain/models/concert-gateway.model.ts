@@ -1,10 +1,13 @@
+import { ConcertGatewayEntityInterface } from './concert-gateway.entity';
+
 /**
  * We still need a model to relate to for the new response.
  * Immutable domain class.
  *
  * @class ConcertGateway
+ * @implements ConcertGatewayEntityInterface
  */
-export class ConcertGateway {
+export class ConcertGateway implements ConcertGatewayEntityInterface {
   readonly band: string;
 
   readonly location: string;

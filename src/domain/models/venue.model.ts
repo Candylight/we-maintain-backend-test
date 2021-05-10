@@ -1,9 +1,12 @@
+import { VenueEntityInterface } from './venue.entity';
+
 /**
  * Immutable domain class.
  *
  * @class Venue
+ * @implements VenueEntityInterface
  */
-export class Venue {
+export class Venue implements VenueEntityInterface {
   readonly id?: number;
 
   readonly name: string;

@@ -4,6 +4,6 @@
  * @interface BandEntityInterface
  */
 export interface BandEntityInterface {
-  readonly id: number;
+  readonly id?: number;
   readonly name: string;
 }

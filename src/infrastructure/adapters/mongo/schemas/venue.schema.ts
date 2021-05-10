@@ -8,12 +8,12 @@ export const VenueSchema = new Schema({
   name: String,
   latitude: Number,
   longitude: Number,
-  // schema needs to have this to accept the new field added
+  // Schema needs to have this to accept the new field added.
   location: {
     type: { type: String },
     coordinates: { type: Array },
   },
 });
 
-// activate location
+// Activate location.
 VenueSchema.index({ location: '2dsphere' });

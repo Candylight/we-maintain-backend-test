@@ -67,7 +67,7 @@ export class FindConcertsByCriteria {
       venues = await this.venueRepository.findByIds(venueIdsOfConcertsFound);
     }
 
-    // Aggregate all the datas to make an according response
+    // Aggregate all the datas to make an according response.
     return FindConcertsByCriteriasResponseMapper.toConcertsGateway(
       concerts,
       bands,

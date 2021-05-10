@@ -1,9 +1,12 @@
+import { ConcertEntityInterface } from './concert.entity';
+
 /**
  * Immutable domain class.
  *
  * @class Concert
+ * @implements ConcertEntityInterface
  */
-export class Concert {
+export class Concert implements ConcertEntityInterface {
   readonly id?: number;
 
   readonly bandId: number;
