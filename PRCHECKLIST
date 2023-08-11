@@ -12,13 +12,13 @@
 
 # To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
 
---source-except feature/* +title+ Global
---source-except feature/* +task+ This PR does not introduce any breaking change
---source-except feature/* +task+ This PR is properly documented
---source-except feature/* +task+ This PR **works**.
-
 +title+ Reviewer Checklist
 +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
 +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
 +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
 +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
+
+--source chore/* +title+ Global
+--source chore/* +task+ This PR does not introduce any breaking change
+--source chore/* +task+ This PR is properly documented
+--source chore/* +task+ This PR **works**.
