@@ -47,7 +47,7 @@
 
 # Checklist for individual files
 --files **/*.jpg +task+ Are images appropriately compressed?
---files **/*.js  +task+ Each promise/callback/async properly handles failures
+--files **/*.ts  +task+ Each promise/callback/async properly handles failures
 
 
 # Checklist for security guidelines
