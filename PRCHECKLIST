@@ -14,7 +14,6 @@
 
 # To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
 
-# Checklist for coding guidelines
 --source-except wip +title+ Global
 --source-except wip +task+ This PR does not introduce any breaking change
 --source-except wip +task+ This PR is properly documented
