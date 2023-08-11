@@ -1,18 +1,23 @@
-+title+ **Backend PR checklist**
-
-+comment+ **Global**
+# Checklist Global
++title+ **Global**
 +task+ This PR does not introduce any breaking change
 +task+ This PR is properly documented
 +task+ This PR **works**.
 
---files **/*-graphql/**/*.* +comment+ **GraphQL**
+
+# Checklist Graphql
+--files **/*-graphql/**/*.* +title+ **GraphQL**
 --files **/*-graphql/**/*.* +task+ Schema manually tested and working
 --files **/*-graphql/**/*.* +task+ All my public Fields / ObjectTypes are properly AND precisely described
 
---files **/*orm-entity*.* +comment+ **Database**
+
+# Checklist Database
+--files **/*orm-entity*.* +title+ **Database**
 --files **/*orm-entity*.* +task+ Created migration via CLI from **staging** schema
 
-+comment+ **Reviewer Checklist**
+
+# Checklist Reviewer Checklist
++title+ **Reviewer Checklist**
 +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
 +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
 +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
