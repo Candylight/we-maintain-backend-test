@@ -1,22 +1,27 @@
-# Checklist Global
-+title+ **Global**
-+task+ This PR does not introduce any breaking change
-+task+ This PR is properly documented
-+task+ This PR **works**.
+# Checklist Buddy by Mibex Software https://www.mibexsoftware.com/
 
-# Checklist Reviewer Checklist
+# To create a new task, use '+task+' followed by the task description.
+# To create a reminder (a non-blocking comment), use '+comment+' followed by the comment text
+
+# To filter when a task is applied, prepend the task/comment/title with one or more of the following filters:
+# '--source'        - the source branch pattners
+# '--source-except' - all pull requests except those matching this pattern
+# '--target'        - the target/destination branch patterns
+# '--files'         - diff file pattern, similar to .gitignore
+
+# When more than one task has the same filter settings, these are grouped as a checklist.
+# Note: entries with the same filter settings will be grouped together, regardless of position in file
+
+# To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
+
+# Checklist for coding guidelines
+--source-except wip +title+ Global
+--source-except wip +task+ This PR does not introduce any breaking change
+--source-except wip +task+ This PR is properly documented
+--source-except wip +task+ This PR **works**.
+
 +title+ **Reviewer Checklist**
 +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
 +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
 +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
 +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
-
-# Checklist Graphql
---files **/*-graphql/**/*.* +title+ **GraphQL**
---files **/*-graphql/**/*.* +task+ Schema manually tested and working
---files **/*-graphql/**/*.* +task+ All my public Fields / ObjectTypes are properly AND precisely described
-
-
-# Checklist Database
---files **/*orm-entity*.* +title+ **Database**
---files **/*orm-entity*.* +task+ Created migration via CLI from **staging** schema
