@@ -12,7 +12,7 @@
 
 # To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
 
---files **/*.ts +title+ **Global**
+--files **/*.ts +title+ Global
 --files **/*.ts +task+ This PR does not introduce any breaking change
 --files **/*.ts +task+ This PR is properly documented
 --files **/*.ts +task+ This PR **works**.
