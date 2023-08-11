@@ -16,50 +16,26 @@
 
 
 # Checklist for new features
---source feature/* +title+ Feature releasable?
---source feature/* +task+ Feature is [discoverable](https://fishshell.com/docs/current/design.html#the-law-of-discoverability) for users?
---source feature/* +task+ [UX intuitive and better than before](https://fishshell.com/docs/current/design.html#the-law-of-user-focus)?
---source feature/* +task+ Feature covered by automated tests?
---source feature/* +task+ [Public documentation](https://mibexsoftware.atlassian.net/wiki/spaces/CB/pages/3004661778/GitHub+-+Pull+Request+Checklist+Buddy) and [Marketplace listing](https://github.com/marketplace/pull-request-checklist-buddy) ready?
---source feature/* +task+ Release note snippet for public release notes?
---source feature/* +task+ Manual test cases and testing instructions documented in Jira issues?
+--source feat/* +title+ Global
+--source feat/* +task+ This PR does not introduce any breaking change
+--source feat/* +task+ This PR is properly documented
+--source feat/* +task+ This PR works.
 
+# Checklist for fixes
+--source fix/* +title+ Global
+--source fix/* +task+ This PR does not introduce any breaking change
+--source fix/* +task+ This PR is properly documented
+--source fix/* +task+ This PR works.
 
-# Checklist for hot fixes
---target main --source hotfix/* +title+ Hotfix releasable?
---target main --source hotfix/* +task+ Hotfix covered by automated tests?
---target main --source hotfix/* +task+ Release note snippet for public release notes?
---target main --source hotfix/* +task+ Manual test cases and testing instructions ready?
-
-
-# Checklist for new releases
---target release/checklist-buddy +title+ release checklist :checkered_flag:
---target release/checklist-buddy +task+ Jira version: description is updated and released
---target release/checklist-buddy +task+ Jira "Fix version" on all issues, remove version from unfinished issue
---target release/checklist-buddy +task+ Version number bumped?
---target release/checklist-buddy +task+ `git tag --annotate checklist-buddy-X.Y.Z` and `git push`
---target release/checklist-buddy +task+ [Public documentation](https://mibexsoftware.atlassian.net/wiki/spaces/CB/pages/3004661778/GitHub+-+Pull+Request+Checklist+Buddy) ready to publish?
---target release/checklist-buddy +task+ [Marketplace listing](https://github.com/marketplace/pull-request-checklist-buddy) updates ready? screenshots, bullet points, highlights etc.
---target release/checklist-buddy +comment+ Inform all customers in associated Jira tickets about the new release and close them if possible.
---target release/checklist-buddy +task+ Social media announcement is scheduled?
---target release/checklist-buddy +comment+ All done? merge PR with `--ff-only`.
-
-
-# Checklist for individual files
---files **/*.jpg +task+ Are images appropriately compressed?
---files **/*.ts  +task+ Each promise/callback/async properly handles failures
-
-
-# Checklist for security guidelines
---files **/*.java +title+ Change secure?
---files **/*.java +task+ All new public endpoints enforce authorization?
---files **/*.java +task+ [OWASP top 10](https://owasp.org/Top10/) considered and no potential vulnerabilities found?
---files **/*.java +task+ Any web UI is [escaping output to prevent XSS](https://stackoverflow.com/questions/12799539/javascript-xss-prevention)
---files **/*.java +task+ [SQL Injection](https://stackoverflow.com/questions/9516625/prevent-sql-injection-attacks-in-a-java-program) has been prevented through parameterized queries
-
+# Checklist for chores
+--source chore/* +title+ Global
+--source chore/* +task+ This PR does not introduce any breaking change
+--source chore/* +task+ This PR is properly documented
+--source chore/* +task+ This PR works.
 
 # Checklist for coding guidelines
-+title+ Complies with our architecture and coding standards?
-+task+  Potential performance pitfalls were considered?
-+task+  Commit messages follow our convention?
-+task+  Does this code comply with the teams chosen architecture?
++title+ Reviewer Checklist
++task+  The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively
++task+  Comments has been adressed and suggested changes has been implemented by the author or at least discussed
++task+  The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
++task+  The documentation of this PR has also been reviewed, is sufficient and is easily understandable
