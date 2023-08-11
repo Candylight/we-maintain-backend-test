@@ -7,7 +7,7 @@ import { ConcertRepository } from '../../../../domain/ports/repositories/concert
 import { ConcertMapper } from '../../../../domain/services/response-mappers/concert.mapper';
 
 /**
- * Mongo repository to request from mongo the Concert domain model.
+ * Mongo repository to  request from mongo the Concert domain model.
  *
  * @class ConcertRepositoryMongo
  * @implements ConcertRepository
