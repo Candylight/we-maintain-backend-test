@@ -12,7 +12,10 @@
 
 # To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
 
---files **/*.ts  +task+ Each promise/callback/async properly handles failures
+--files **/*.ts +title+ **Global**
+--files **/*.ts +task+ This PR does not introduce any breaking change
+--files **/*.ts +task+ This PR is properly documented
+--files **/*.ts +task+ This PR **works**.
 
 +title+ Reviewer Checklist
 +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
