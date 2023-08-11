@@ -1,1 +1,18 @@
-+task+ Hug your Checklist Buddy once a day.
++title+ **Global**
++task+ This PR does not introduce any breaking change
++task+ This PR is properly documented
++task+ This PR **works**.
++comment+ Provide an explanation on how this PR works, how it has been tested (unit/integration tests, functionnal tests, sandboxes,...), feel free to add screenshots of desired output
+
++comment+ **GraphQL**
+--files **/*-graphql/**/*.* +task+ Schema manually tested and working
+--files **/*-graphql/**/*.* +task+ All my public Fields / ObjectTypes are properly AND precisely described
+
++comment+ **Database**
+--files **/*orm-entity*.* +task+ Created migration via CLI from **staging** schema
+
++comment+ **Reviewer Checklist**
++task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
++task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
++task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
++task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
