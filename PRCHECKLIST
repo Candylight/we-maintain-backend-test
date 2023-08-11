@@ -1,47 +1,25 @@
-# Checklist Buddy by Mibex Software https://www.mibexsoftware.com/
++title+ Author Checklist
++task+ This PR does not introduce any breaking change
++task+ This PR is properly documented
++task+ This PR **works**.
++task+ **GraphQL** Schema manually tested and working
++task+ **GraphQL** All my public Fields / ObjectTypes are properly AND precisely described
++task+ **Database** All my public Fields / ObjectTypes are properly AND precisely described
 
-# To create a new task, use '+task+' followed by the task description.
-# To create a reminder (a non-blocking comment), use '+comment+' followed by the comment text
+--source fix/* +title+ Reviewer Checklist
+--source fix/* +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
+--source fix/* +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
+--source fix/* +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
+--source fix/* +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
 
-# To filter when a task is applied, prepend the task/comment/title with one or more of the following filters:
-# '--source'        - the source branch pattners
-# '--source-except' - all pull requests except those matching this pattern
-# '--target'        - the target/destination branch patterns
-# '--files'         - diff file pattern, similar to .gitignore
+--source feat/* +title+ Reviewer Checklist
+--source feat/* +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
+--source feat/* +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
+--source feat/* +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
+--source feat/* +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
 
-# When more than one task has the same filter settings, these are grouped as a checklist.
-# Note: entries with the same filter settings will be grouped together, regardless of position in file
-
-# To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
-
-
-# Checklist for new features
---source feat/* +title+ Global
---source feat/* +task+ This PR does not introduce any breaking change
---source feat/* +task+ This PR is properly documented
---source feat/* +task+ This PR works.
-
-# Checklist for fixes
---source fix/* +title+ Global
---source fix/* +task+ This PR does not introduce any breaking change
---source fix/* +task+ This PR is properly documented
---source fix/* +task+ This PR works.
-
-# Checklist for chores
---source chore/* +title+ Global
---source chore/* +task+ This PR does not introduce any breaking change
---source chore/* +task+ This PR is properly documented
---source chore/* +task+ This PR works.
-
---files **/*.ts +title+ Change secure?
---files **/*.ts +task+ All new public endpoints enforce authorization?
---files **/*.ts +task+ [OWASP top 10](https://owasp.org/Top10/) considered and no potential vulnerabilities found?
---files **/*.ts +task+ Any web UI is [escaping output to prevent XSS](https://stackoverflow.com/questions/12799539/javascript-xss-prevention)
---files **/*.ts +task+ [SQL Injection](https://stackoverflow.com/questions/9516625/prevent-sql-injection-attacks-in-a-java-program) has been prevented through parameterized queries
-
-# Checklist for coding guidelines
-+title+ Reviewer Checklist
-+task+  The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively
-+task+  Comments has been adressed and suggested changes has been implemented by the author or at least discussed
-+task+  The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
-+task+  The documentation of this PR has also been reviewed, is sufficient and is easily understandable
+--source chore/* +title+ Reviewer Checklist
+--source chore/* +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
+--source chore/* +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
+--source chore/* +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
+--source chore/* +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
