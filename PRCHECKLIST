@@ -1,14 +1,14 @@
-+title+ **Global**
++comment+ **Global**
 +task+ This PR does not introduce any breaking change
 +task+ This PR is properly documented
 +task+ This PR **works**.
 +comment+ Provide an explanation on how this PR works, how it has been tested (unit/integration tests, functionnal tests, sandboxes,...), feel free to add screenshots of desired output
 
-+comment+ **GraphQL**
+--files **/*-graphql/**/*.* +comment+ **GraphQL**
 --files **/*-graphql/**/*.* +task+ Schema manually tested and working
 --files **/*-graphql/**/*.* +task+ All my public Fields / ObjectTypes are properly AND precisely described
 
-+comment+ **Database**
+--files **/*orm-entity*.* +comment+ **Database**
 --files **/*orm-entity*.* +task+ Created migration via CLI from **staging** schema
 
 +comment+ **Reviewer Checklist**
