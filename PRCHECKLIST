@@ -1,3 +1,10 @@
+--target master # Checklist Reviewer Checklist
+--target master +title+ **Reviewer Checklist**
+--target master +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
+--target master +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
+--target master +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
+--target master +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
+
 # Checklist Graphql
 --files **/*-graphql/**/*.* +title+ **GraphQL**
 --files **/*-graphql/**/*.* +task+ Schema manually tested and working
@@ -7,14 +14,6 @@
 # Checklist Database
 --files **/*orm-entity*.* +title+ **Database**
 --files **/*orm-entity*.* +task+ Created migration via CLI from **staging** schema
-
-
---target master # Checklist Reviewer Checklist
---target master +title+ **Reviewer Checklist**
---target master +task+ **The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively**
---target master +task+ Comments has been adressed and suggested changes has been implemented by the author or at least discussed
---target master +task+ The test coverage of this PR has been improved or maintained with BOTH unit and integration tests
---target master +task+ The documentation of this PR has also been reviewed, is sufficient and is easily understandable
 
 
 # Checklist Global
