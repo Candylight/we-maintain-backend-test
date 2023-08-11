@@ -33,6 +33,12 @@
 --source chore/* +task+ This PR is properly documented
 --source chore/* +task+ This PR works.
 
+--files **/*.ts +title+ Change secure?
+--files **/*.ts +task+ All new public endpoints enforce authorization?
+--files **/*.ts +task+ [OWASP top 10](https://owasp.org/Top10/) considered and no potential vulnerabilities found?
+--files **/*.ts +task+ Any web UI is [escaping output to prevent XSS](https://stackoverflow.com/questions/12799539/javascript-xss-prevention)
+--files **/*.ts +task+ [SQL Injection](https://stackoverflow.com/questions/9516625/prevent-sql-injection-attacks-in-a-java-program) has been prevented through parameterized queries
+
 # Checklist for coding guidelines
 +title+ Reviewer Checklist
 +task+  The reviewer has understood the functionnal requirements and verified that the code changes meet these requirements effectively
