@@ -39,7 +39,7 @@ export class FindConcertsByCriteria {
       );
     }
 
-    // Search Venues[] from the provided location parameters and search Concerts[] corresponding to theses specifics Venues.
+    // Search Venues[] from the provided locations parameters and search Concerts[] corresponding to theses specifics Venues.
     if (longitude && latitude && radius) {
       venues = await this.venueRepository.findByLocation({
         longitude,
